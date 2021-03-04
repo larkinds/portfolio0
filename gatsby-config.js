@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'personal-portfolio',
+    title: 'Larkin Smith',
   },
   plugins: [
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
+    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -23,5 +24,6 @@ module.exports = {
       },
       __key: 'pages',
     },
+    `gatsby-transformer-json`,
   ],
 };

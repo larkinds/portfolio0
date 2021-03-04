@@ -4,20 +4,28 @@ import './layout.css';
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <nav className="navbar" id="navbar">
-        <Link to="/">LSD</Link>
-        <Link to="/about/">About</Link>
-        <Link to="/codingProjects">Coding Projects</Link>
-        <Link to="/creativeProjects">Creative Projects</Link>
-      </nav>
-      {children}
-      <footer>
-        <a href="https://github.com/larkinds">Github</a>
-        <a href="https://github.com/larkinds">Linkedin</a>
-        <a href="mailto:larkinsmith.work@gmail.com">Email</a>
-      </footer>
-    </div>
+    <body>
+      <div className="bodyDiv">
+        <nav className="navbar" id="navbar">
+          <Link className="logo" to="/">
+            LSD
+          </Link>
+          <div className="nav-item">
+            <Link to="/about/">About</Link>
+            <Link to="/codingProjects">Coding Projects</Link>
+            <Link to="/creativeProjects">Creative Projects</Link>
+          </div>
+        </nav>
+        {children}
+        <footer>
+          <div class="footerContent">
+            <a href="https://github.com/larkinds">Github</a>
+            <a href="https://github.com/larkinds">Linkedin</a>
+            <a href="mailto:larkinsmith.work@gmail.com">Email</a>
+          </div>
+        </footer>
+      </div>
+    </body>
   );
 };
 

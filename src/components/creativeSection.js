@@ -1,37 +1,34 @@
 import React from 'React';
+import Img from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
-const creativeSection = () => {
+export default function CreativeSection({ project }) {
+  const data = useStaticQuery(graphql`
+    query creativeProjects($path: String!) {
+      file(relativePath: { eq: $path }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <section>
       <div className="creativeSectionImg">
-        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-          <iframe
-            src="https://player.vimeo.com/video/128698619?byline=0&portrait=0"
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-            }}
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+        <img
+          className="creativeImg"
+          src={project.relativePath}
+          alt={project.title}
+        />
       </div>
       <div className="creativeSectionInfo">
-        <h4>Creative Title</h4>
-        <p>
-          There is no female mind. The brain is not an organ of sex. As well
-          speak of a female liver. -Charlotte Perkins Gilman Men are from Earth,
-          women are from Earth. Deal with it. -George Carlin No woman can call
-          herself free who does not control her own body. -Margaret Sanger
-        </p>
+        <h4>{project.title}</h4>
+        <h5>{project.job}</h5>
+        <p>{project.responsibility}</p>
       </div>
     </section>
   );
-};
-
-export default creativeSection;
+}

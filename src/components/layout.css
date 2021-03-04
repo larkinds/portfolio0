@@ -1,16 +1,110 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
   height: 100%;
-  z-index: 0;
-  box-sizing: border-box;
+}
+
+.bodyDiv {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: [row-0] 10% [row-2] 26.6% [row-3] 26.6% [row-3] 26.6% [row-4] 10% [row-5];
+  grid-template-areas:
+    'header header header header header'
+    'main main main main main'
+    'main main main main main'
+    'main main main main main'
+    'footer footer footer footer footer';
+  /* grid-gap: 0.5rem; */
+  /* margin: 0;
+  padding: 0; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* box-sizing: border-box; */
   font-family: 'Lora', serif;
   font-size: 18px;
   color: #002147;
+  background: #fcfaf6;
 }
 
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+}
+
+.navbar {
+  background: #fbf7f0;
+  border-bottom: 0.1px solid #002147;
+  grid-area: header;
+  outline: dotted pink 3px;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-areas: 'left . . right right';
+  align-items: center;
+}
+
+.logo {
+  grid-area: left;
+  margin-left: 7%;
+}
+
+.nav-item {
+  grid-area: right;
+  display: flex;
+  justify-content: space-around;
+}
+
+.homeContainer {
+  grid-area: main;
+  outline: solid cornflowerblue 3px;
+  display: grid;
+  grid-template-columns: repeat(6, 16.6%);
+  grid-template-rows: repeat(3, 33.3%);
+}
+
+.homeImg {
+  grid-column: 2;
+  grid-row: 2;
+  height: 400px;
+  width: 300px;
+  align-self: center;
+  justify-self: center;
+}
+
+.title-image {
+  height: 100%;
+}
+
+.homeLine {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  border-right: 0.5px solid #002147;
+  height: 75%;
+  align-self: center;
+}
+
+.homeText {
+  grid-column: 5;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+title-name {
+  border-bottom: 0.5px solid #002147;
+}
+
+footer {
+  grid-area: footer;
+  outline: dotted seagreen 3px;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-areas: 'left . . . right';
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerContent {
+  grid-area: right;
 }

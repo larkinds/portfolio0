@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Clap for Cake",
+            "stack": "Javascript, React, Redux, Express, Sequelize",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam. Sed et tempor dolor. Aliquam bibendum eros sed diam ultrices, id cursus nisl ullamcorper. Curabitur sit amet fermentum ex. Fusce pretium sit amet felis in iaculis.",
+            "img": ""
+        },
+        {
+            "id": 2,
+            "title": "MyMelier",
+            "stack": "Javascript, React Native, Redux, Express, Sequelize",
+            "info": "There is a principal which is proof against all information, which is proof against all arguments, which cannot fail to keep man in everlasting ignorance; that principal is - contempt prior to investigation! -Herbert Spencer"
+        }
+    ]
+}

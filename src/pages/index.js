@@ -16,8 +16,12 @@ export default function IndexPage({ data }) {
         </div>
         <div class="homeLine"></div>
         <div className="homeText">
-          <h2 className="title-name">Larkin Smith</h2>
-          <h3>Software Engineer</h3>
+          <div>
+            <h2 className="title-name">Larkin Smith</h2>
+          </div>
+          <div>
+            <h3 className="title-title">Software Engineer</h3>
+          </div>
         </div>
       </div>
     </Layout>

@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="about">
-        <p>
+        <p className="aboutp">
           A woman without a man is like a fish without a bicycle. -Gloria
           Steinem I only know that people call me a feminist whenever I express
           sentiments that differentiate me from a doormat. -Rebecca West
@@ -14,7 +14,7 @@ const AboutPage = () => {
           well speak of a female liver. -Charlotte Perkins Gilman Men are from
           Earth, women are from Earth. Deal with it. -George Carlin
         </p>
-        <p>
+        <p className="aboutp">
           No woman can call herself free who does not control her own body.
           -Margaret Sanger I cannot understand anti-abortion arguments that
           centre on the sanctity of life. As a species we’ve fairly

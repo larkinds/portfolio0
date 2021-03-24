@@ -36,7 +36,6 @@ p {
   background: #fbf7f0;
   border-bottom: 0.1px solid #002147;
   grid-area: header;
-  outline: dotted pink 3px;
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-areas: 'left . . right right';
@@ -51,7 +50,7 @@ p {
 .nav-item {
   grid-area: right;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .homeContainer {
@@ -79,7 +78,7 @@ p {
   grid-column: 3;
   grid-row: 1 / span 3;
   border-right: 0.5px solid #002147;
-  height: 75%;
+  height: 65%;
   align-self: center;
 }
 
@@ -99,7 +98,6 @@ p {
 
 footer {
   grid-area: footer;
-  outline: dotted seagreen 3px;
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-areas: 'left . . . right';
@@ -109,4 +107,6 @@ footer {
 
 .footerContent {
   grid-area: right;
+  display: flex;
+  justify-content: space-evenly;
 }

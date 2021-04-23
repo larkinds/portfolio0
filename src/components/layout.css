@@ -2,29 +2,25 @@ html,
 body {
   margin: 0%;
   height: 100%;
+  width: 100%;
 }
 
 .bodyDiv {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: [row-0] 10% [row-2] 30% [row-3] 30% [row-3] 30% [row-4];
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: [row-0] 4.75rem [row-1] 1fr [row-2] auto;
   grid-template-areas:
     'header header header header header'
     'main main main main main'
-    'main main main main main'
-    'main main main main main'
     'footer footer footer footer footer';
-  /* grid-gap: 0.5rem; */
-  /* margin: 0;
-  padding: 0; */
   position: absolute;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  /* box-sizing: border-box; */
   font-family: 'Lora', serif;
   font-size: 18px;
   color: #002147;
   background: #fcfaf6;
+  overflow: auto;
 }
 
 p {
@@ -33,7 +29,7 @@ p {
 }
 
 .navbar {
-  background: #fbf7f0;
+  background: #fcfaf6;
   border-bottom: 0.1px solid #002147;
   grid-area: header;
   display: grid;
@@ -53,6 +49,8 @@ p {
   justify-content: space-evenly;
 }
 
+/* footer */
+
 footer {
   background: #fcfaf6;
   grid-area: footer;
@@ -61,6 +59,7 @@ footer {
   grid-template-areas: 'left . . . right';
   align-items: center;
   justify-content: space-between;
+  margin: 3% 0%;
 }
 
 .footerContent {
@@ -68,6 +67,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* homepage */
 
 .homeContainer {
   grid-area: main;
@@ -111,11 +112,12 @@ footer {
   margin: 0;
 }
 
+/* about page */
+
 .about {
   grid-area: main;
   width: 55%;
   height: 75%;
-  /* margin-bottom: 100px; */
   align-self: center;
   justify-self: center;
   line-height: 1.4;
@@ -124,4 +126,106 @@ footer {
 .aboutp {
   margin-bottom: 25px;
   font-size: 17px;
+}
+
+/* Coding Page & Cards */
+
+.codingPage {
+  grid-area: main;
+  width: 85%;
+  margin: 2% 0%;
+  justify-self: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-container {
+  width: 22%;
+  height: 24rem;
+  border: 1px solid #002147;
+  padding: 1%;
+  margin: 1% 4%;
+}
+
+.card {
+  border: 1px dotted pink;
+  height: 99%;
+  width: 99%;
+  display: grid;
+  grid-template-rows: [col-0] 10% [col-2] 40% [col-3] 10% [col-4] 40%;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.projectImg {
+  height: 90%;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid lightblue;
+}
+
+.projectImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.projectTitle {
+  justify-self: center;
+}
+
+.projectInfo,
+.projectStack {
+  font-size: 14px;
+  padding: 7px;
+  margin: 0;
+}
+
+.projectStack {
+  font-style: italic;
+}
+
+/* Creative Projects Page & Sections */
+
+.creative-page {
+  grid-area: main;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 1% 0%;
+}
+
+.creative-section {
+  border: 1px solid #002147;
+  width: 85%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'image info info'
+    'image info info'
+    'image info info'
+    'image info info';
+  margin: 1% 0%;
+  padding: 2%;
+}
+
+.creative-section-img {
+  grid-area: image;
+  border: 1px dotted pink;
+  width: 85%;
+  height: 95%;
+  align-self: center;
+  justify-self: center;
+}
+
+.creative-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.creative-section-info {
+  grid-area: info;
 }

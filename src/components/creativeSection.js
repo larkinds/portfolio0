@@ -16,15 +16,15 @@ export default function CreativeSection({ project }) {
   `);
 
   return (
-    <section>
-      <div className="creativeSectionImg">
+    <section className="creative-section">
+      <div className="creative-section-img">
         <img
-          className="creativeImg"
+          className="creative-img"
           src={project.relativePath}
           alt={project.title}
         />
       </div>
-      <div className="creativeSectionInfo">
+      <div className="creative-section-info">
         <h4>{project.title}</h4>
         <h5>{project.job}</h5>
         <p>{project.responsibility}</p>

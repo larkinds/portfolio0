@@ -6,7 +6,7 @@ import creativeData from '../data/creativeData.json';
 const CreativeProjectsPage = () => {
   return (
     <Layout>
-      <div>
+      <div className="creative-page">
         {creativeData.data.map((project) => {
           return <CreativeSection key={project.id} project={project} />;
         })}

@@ -17,13 +17,6 @@ const Layout = ({ children }) => {
           </div>
         </nav>
         {children}
-        <footer>
-          <div class="footerContent">
-            <a href="https://github.com/larkinds">Github</a>
-            <a href="https://github.com/larkinds">Linkedin</a>
-            <a href="mailto:larkinsmith.work@gmail.com">Email</a>
-          </div>
-        </footer>
       </div>
     </body>
   );

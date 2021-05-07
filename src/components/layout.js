@@ -8,12 +8,21 @@ const Layout = ({ children }) => {
       <div className="bodyDiv">
         <nav className="navbar" id="navbar">
           <Link className="logo" to="/">
-            LSD
+            Larkin
           </Link>
           <div className="nav-item">
-            <Link to="/about/">About</Link>
-            <Link to="/codingProjects">Coding Projects</Link>
-            <Link to="/creativeProjects">Creative Projects</Link>
+            <Link className="nav-item-text" to="/codingProjects">
+              Code
+            </Link>
+            <Link className="nav-item-text" to="/creativeProjects">
+              Creative
+            </Link>
+            <Link className="nav-item-text" to="/about">
+              About
+            </Link>
+            <Link className="nav-item-text" to="/contact">
+              Contact
+            </Link>
           </div>
         </nav>
         {children}

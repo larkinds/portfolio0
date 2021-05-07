@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
-export default function IndexPage({ data }) {
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <div className="homeContainer">
@@ -26,7 +26,7 @@ export default function IndexPage({ data }) {
       </div>
     </Layout>
   );
-}
+};
 
 export const data = graphql`
   query Index {
@@ -39,3 +39,5 @@ export const data = graphql`
     }
   }
 `;
+
+export default IndexPage;

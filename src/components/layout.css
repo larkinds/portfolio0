@@ -5,6 +5,10 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .bodyDiv {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -44,7 +48,7 @@ p {
     flex-direction: column;
     align-items: flex-end;
     margin: 5%;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -77,6 +81,10 @@ p {
 /* homepage */
 
 @media screen and (max-width: 768px) {
+  .homeText {
+    font-size: 16px;
+  }
+
   .homeImg {
     grid-column: 2;
     grid-row: 2;
@@ -116,7 +124,7 @@ p {
 }
 
 .homeText {
-  grid-column: 5;
+  grid-column: 4 / 7;
   grid-row: 2;
   display: flex;
   flex-flow: column wrap;
@@ -199,7 +207,8 @@ p {
 }
 
 .card {
-  background-color: #986c35;
+  background-image: url('../images/bronzeCardBackground.png');
+  background-size: contain;
   color: #00022e;
   height: 99%;
   width: 99%;
@@ -278,4 +287,91 @@ p {
 
 .creative-section-info {
   grid-area: info;
+}
+
+.contactContent {
+  grid-area: main;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-box {
+  width: 55%;
+  margin: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.social-links {
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.social-link {
+  color: #986c35;
+  text-decoration: underline;
+}
+
+form,
+.contact-email-form {
+  border: 1px solid #fcfaf6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+}
+
+.form-email {
+  justify-content: space-evenly;
+}
+
+.form-message {
+  margin-top: 5%;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.email-form-input {
+  border: 1px solid #fcfaf6;
+  border-radius: 5%;
+  background: #fcfaf6;
+  width: 25%;
+}
+
+.textarea-label {
+  margin-bottom: 1%;
+  margin-left: 13%;
+}
+
+.email-form-textarea {
+  margin-top: 1%;
+  width: 85%;
+}
+
+.email-form-button {
+  margin-top: 5%;
+  align-self: center;
+  width: 21%;
+  height: 16%;
+  border-radius: 55%;
+  background: #986c35;
+  border: #fcfaf6;
+}
+
+.contactLine {
+  border-top: 1px solid #fcfaf6;
+  width: 65%;
 }

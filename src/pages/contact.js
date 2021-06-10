@@ -5,8 +5,14 @@ import { useForm, ValidationError } from '@formspree/react';
 const ContactPage = () => {
   const [state, handleSubmit] = useForm('mzbyejyp');
   // const [form, handleForm] = useState(true);
+  const [update, handleUpdate] = useState(false);
+
+  function handleClick(event) {
+    event.preventDefault();
+  }
 
   if (state.submitted) {
+    console.log('in the if');
     return (
       <Layout>
         <div className="contactContent">
@@ -28,10 +34,19 @@ const ContactPage = () => {
     );
   }
 
+  console.log('in the else');
+  function handleClick() {
+    window.onbeforeunload = () => {
+      for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    };
+  }
+
   return (
     <Layout>
       <div className="contactContent">
-        <div className="contact-box">
+        <div className="contact-social-box">
           <h2>Social</h2>
           <div className="social-links">
             <a className="social-link" href="https://github.com/larkinds">
@@ -43,7 +58,7 @@ const ContactPage = () => {
           </div>
         </div>
         <div class="contactLine"></div>
-        <div className="contact-box">
+        <div className="contact-email-box">
           <h2>Email</h2>
           <form className="contact-email-form" onSubmit={handleSubmit}>
             <div className="form form-email">
@@ -68,7 +83,7 @@ const ContactPage = () => {
                 className="email-form-textarea"
                 id="message"
                 name="message"
-                rows="7"
+                rows="10"
               />
               <ValidationError
                 prefix="Message"
@@ -79,11 +94,15 @@ const ContactPage = () => {
             <button
               className="email-form-button"
               type="submit"
+              onClick={handleClick}
               disabled={state.submitting}
             >
               Submit
             </button>
           </form>
+        </div>
+        <div className="contact-box">
+          <p>(You look nice today.)</p>
         </div>
       </div>
     </Layout>

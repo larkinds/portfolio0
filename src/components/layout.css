@@ -80,21 +80,6 @@ p {
 
 /* homepage */
 
-@media screen and (max-width: 768px) {
-  .homeText {
-    font-size: 16px;
-  }
-
-  .homeImg {
-    grid-column: 2;
-    grid-row: 2;
-    aspect-ratio: 3/4;
-    width: 300%;
-    align-self: center;
-    justify-self: center;
-  }
-}
-
 .homeContainer {
   grid-area: main;
   display: grid;
@@ -106,7 +91,7 @@ p {
   grid-column: 2;
   grid-row: 2;
   aspect-ratio: 3/4;
-  width: 200%;
+  height: 145%;
   align-self: center;
   justify-self: center;
 }
@@ -135,6 +120,21 @@ p {
 .title-name,
 .title-title {
   margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .homeText {
+    font-size: 16px;
+  }
+
+  .homeImg {
+    grid-column: 2;
+    grid-row: 2;
+    aspect-ratio: 3/4;
+    height: 88%;
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 /* about page */
@@ -289,6 +289,8 @@ p {
   grid-area: info;
 }
 
+/* Contact Page */
+
 .contactContent {
   grid-area: main;
   display: flex;
@@ -297,12 +299,83 @@ p {
   align-items: center;
 }
 
-.contact-box {
+.contact-social-box {
   width: 55%;
   margin: 5%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.contact-email-box {
+  width: 65%;
+  height: auto;
+  margin: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.email-form-button {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  align-self: center;
+  width: 17%;
+  height: 15%;
+  border-radius: 55%;
+  background: #986c35;
+  border: #fcfaf6;
+}
+
+.email-form-input {
+  border: 1px solid #fcfaf6;
+  border-radius: 5%;
+  background: #fcfaf6;
+  width: 45%;
+}
+
+.textarea-label {
+  margin-bottom: 1%;
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 567px) {
+  .contact-email-box {
+    width: 80%;
+  }
+
+  .email-form-button {
+    width: 21%;
+    height: 10%;
+    margin-bottom: 1%;
+  }
+
+  .email-form-input {
+    width: 50%;
+  }
+
+  .textarea-label {
+    margin-left: 0%;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 834px) {
+  .contact-email-box {
+    width: 75%;
+    margin: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .email-form-button {
+    width: 21%;
+    height: 16%;
+  }
+
+  .textarea-label {
+    margin-left: 2%;
+  }
 }
 
 .social-links {
@@ -344,34 +417,12 @@ form,
   align-content: center;
 }
 
-.email-form-input {
-  border: 1px solid #fcfaf6;
-  border-radius: 5%;
-  background: #fcfaf6;
-  width: 25%;
-}
-
-.textarea-label {
-  margin-bottom: 1%;
-  margin-left: 13%;
-}
-
 .email-form-textarea {
   margin-top: 1%;
-  width: 85%;
-}
-
-.email-form-button {
-  margin-top: 5%;
-  align-self: center;
-  width: 21%;
-  height: 16%;
-  border-radius: 55%;
-  background: #986c35;
-  border: #fcfaf6;
+  width: 74%;
 }
 
 .contactLine {
   border-top: 1px solid #fcfaf6;
-  width: 65%;
+  width: 60%;
 }

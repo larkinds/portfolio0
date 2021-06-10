@@ -11,10 +11,10 @@ const IndexPage = ({ data }) => {
           <Img
             className="title-image"
             fluid={data.file.childImageSharp.fluid}
-            alt="black and white photograph of trees in the fog"
+            alt="copper abstract art piece"
           />
         </div>
-        <div class="homeLine"></div>
+        <div className="homeLine"></div>
         <div className="homeText">
           <div>
             <h2 className="title-name">Larkin Smith</h2>
@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
 
 export const data = graphql`
   query Index {
-    file(relativePath: { eq: "trees.jpg" }) {
+    file(relativePath: { eq: "bronzeCardBackground.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

@@ -182,7 +182,7 @@ p {
 .codingPage {
   grid-area: main;
   width: 85%;
-  margin: 2% 0%;
+  margin: 5% 0%;
   justify-self: center;
   justify-content: space-evenly;
   align-content: flex-start;
@@ -225,7 +225,6 @@ p {
   height: 99%;
   width: 99%;
   display: grid;
-  grid-template-rows: [col-0] 10% [col-2] 40% [col-3] 10% [col-4] 40%;
   align-items: flex-start;
   justify-items: flex-start;
 }
@@ -244,6 +243,7 @@ p {
 }
 
 .projectTitle {
+  grid-area: 0;
   justify-self: center;
 }
 
@@ -256,6 +256,16 @@ p {
 
 .projectStack {
   font-style: italic;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.singleLink {
+  color: #fcfaf6;
 }
 
 /* Creative Projects Page & Sections */

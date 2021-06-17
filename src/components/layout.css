@@ -127,7 +127,7 @@ p {
     grid-column: 2;
     grid-row: 2;
     aspect-ratio: 3/4;
-    height: 88%;
+    height: 78%;
     align-self: center;
     justify-self: center;
   }
@@ -141,28 +141,40 @@ p {
 
 .about {
   grid-area: main;
-  width: 55%;
+  width: 65%;
   height: 75%;
   align-self: center;
   justify-self: center;
   line-height: 1.4;
 }
 
-@media screen and (max-width: 736px) {
-  .about {
-    grid-area: main;
-    width: 75%;
-    height: 75%;
-    margin-top: 5%;
-    align-self: unset;
-    justify-self: center;
-    line-height: 1.4;
-  }
+.about-img {
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  aspect-ratio: 2/3;
+  width: 35%;
+  align-self: center;
+  justify-self: center;
 }
 
 .aboutp {
+  margin-top: -1%;
   margin-bottom: 25px;
   font-size: 17px;
+}
+
+@media screen and (max-width: 709px) {
+  .about {
+    width: 80%;
+    height: 75%;
+    margin-top: 10%;
+    align-self: unset;
+  }
+
+  .about-img {
+    width: 65%;
+  }
 }
 
 /* Coding Page & Cards */
@@ -417,7 +429,7 @@ form,
 
   .email-form-button {
     width: 21%;
-    height: 16%;
+    height: 14%;
   }
 
   .textarea-label {

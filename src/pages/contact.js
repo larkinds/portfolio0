@@ -57,7 +57,7 @@ const ContactPage = () => {
             </a>
           </div>
         </div>
-        <div className="contactLine"></div>
+        <div class="contactLine"></div>
         <div className="contact-email-box">
           <h2>Email</h2>
           <form className="contact-email-form" onSubmit={handleSubmit}>

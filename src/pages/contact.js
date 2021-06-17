@@ -32,15 +32,15 @@ const ContactPage = () => {
         </div>
       </Layout>
     );
-  }
-
-  console.log('in the else');
-  function handleClick() {
-    window.onbeforeunload = () => {
-      for (const form of document.getElementsByTagName('form')) {
-        form.reset();
-      }
-    };
+  } else {
+    console.log('in the else');
+    function handleClick() {
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName('form')) {
+          form.reset();
+        }
+      };
+    }
   }
 
   return (
@@ -57,7 +57,7 @@ const ContactPage = () => {
             </a>
           </div>
         </div>
-        <div class="contactLine"></div>
+        <div className="contactLine"></div>
         <div className="contact-email-box">
           <h2>Email</h2>
           <form className="contact-email-form" onSubmit={handleSubmit}>

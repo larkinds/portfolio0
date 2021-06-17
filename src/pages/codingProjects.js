@@ -6,7 +6,7 @@ import codingData from '../data/codingData.json';
 const CodingProjectsPage = () => {
   return (
     <Layout>
-      <div class="codingPage">
+      <div className="codingPage">
         {codingData.data.map((project) => {
           return <CodingCard key={project.id} project={project} />;
         })}

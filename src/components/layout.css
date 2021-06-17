@@ -123,10 +123,6 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-  .homeText {
-    font-size: 16px;
-  }
-
   .homeImg {
     grid-column: 2;
     grid-row: 2;
@@ -134,6 +130,10 @@ p {
     height: 88%;
     align-self: center;
     justify-self: center;
+  }
+
+  .homeText {
+    font-size: 16px;
   }
 }
 
@@ -318,10 +318,9 @@ p {
 
 .email-form-button {
   margin-top: 5%;
-  margin-bottom: 1%;
   align-self: center;
   width: 17%;
-  height: 15%;
+  height: 13%;
   border-radius: 55%;
   background: #986c35;
   border: #fcfaf6;
@@ -329,53 +328,18 @@ p {
 
 .email-form-input {
   border: 1px solid #fcfaf6;
-  border-radius: 5%;
   background: #fcfaf6;
   width: 45%;
 }
 
 .textarea-label {
   margin-bottom: 1%;
-  margin-left: 3%;
+  margin-left: 0%;
 }
 
-@media screen and (max-width: 567px) {
-  .contact-email-box {
-    width: 80%;
-  }
-
-  .email-form-button {
-    width: 21%;
-    height: 10%;
-    margin-bottom: 1%;
-  }
-
-  .email-form-input {
-    width: 50%;
-  }
-
-  .textarea-label {
-    margin-left: 0%;
-  }
-}
-
-@media screen and (min-width: 568px) and (max-width: 834px) {
-  .contact-email-box {
-    width: 75%;
-    margin: 5%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-
-  .email-form-button {
-    width: 21%;
-    height: 16%;
-  }
-
-  .textarea-label {
-    margin-left: 2%;
-  }
+.email-form-textarea {
+  margin-top: 1%;
+  width: 69%;
 }
 
 .social-links {
@@ -417,12 +381,74 @@ form,
   align-content: center;
 }
 
-.email-form-textarea {
-  margin-top: 1%;
-  width: 74%;
+.contactLine {
+  border-top: 0.3px solid #986c35;
+  width: 50%;
 }
 
-.contactLine {
-  border-top: 1px solid #fcfaf6;
-  width: 60%;
+@media screen and (max-width: 651px) {
+  .contact-email-box {
+    width: 80%;
+    height: auto;
+  }
+
+  .email-form-button {
+    width: 21%;
+    height: 10%;
+  }
+
+  .email-form-input {
+    width: 50%;
+  }
+
+  .textarea-label {
+    margin-left: -1%;
+  }
+  .email-form-textarea {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 834px) {
+  .contact-email-box {
+    width: 70%;
+    height: auto;
+  }
+
+  .email-form-button {
+    width: 21%;
+    height: 16%;
+  }
+
+  .textarea-label {
+    margin-left: 0.1%;
+  }
+
+  .email-form-textarea {
+    width: 69.9%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .contact-email-box {
+    width: 55%;
+    height: 45%;
+  }
+
+  .email-form-button {
+    width: 17%;
+    height: 13%;
+  }
+
+  .textarea-label {
+    margin-left: 0.2%;
+  }
+
+  .email-form-textarea {
+    width: 68%;
+  }
+
+  .form-email {
+    margin-top: 1%;
+  }
 }

@@ -230,8 +230,8 @@ p {
 }
 
 .projectImg {
-  height: 90%;
-  width: 50%;
+  width: 60%;
+  height: auto;
   justify-self: center;
   align-self: center;
   border: 1px solid lightblue;
@@ -295,9 +295,6 @@ p {
 
 .creative-section-img {
   grid-area: image;
-  border: 1px dotted pink;
-  width: 85%;
-  height: 95%;
   align-self: center;
   justify-self: center;
 }

@@ -1,26 +1,13 @@
 import React from 'react';
-import Img from 'gatsby-image';
-import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
-export default function CreativeSection({ project }) {
-  const data = useStaticQuery(graphql`
-    query creativeProjects($path: String!) {
-      file(relativePath: { eq: $path }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
+export default function CreativeSection({ project, image }) {
   return (
     <section className="creative-section">
       <div className="creative-section-img">
-        <img
+        <GatsbyImage
           className="creative-img"
-          src={project.relativePath}
+          image={image}
           alt={project.title}
         />
       </div>

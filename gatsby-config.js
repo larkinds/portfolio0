@@ -8,6 +8,7 @@ module.exports = {
     'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

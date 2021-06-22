@@ -5,21 +5,21 @@
             "title": "Girl in the Book",
             "job": "Production Assistant",
             "responsibility": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam. Sed et tempor dolor. Aliquam bibendum eros sed diam ultrices, id cursus nisl ullamcorper. Curabitur sit amet fermentum ex. Fusce pretium sit amet felis in iaculis.",
-            "relativePath": "/images/trees.jpg"
+            "img": "trees.jpg"
         },
         {
             "id": 1,
             "title": "Girl in the Book",
             "job": "Production Assistant",
             "responsibility": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam. Sed et tempor dolor. Aliquam bibendum eros sed diam ultrices, id cursus nisl ullamcorper. Curabitur sit amet fermentum ex. Fusce pretium sit amet felis in iaculis.",
-            "relativePath": "/images/trees.jpg"
+            "img": "trees.jpg"
         },
         {
             "id": 1,
             "title": "Girl in the Book",
             "job": "Production Assistant",
             "responsibility": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam. Sed et tempor dolor. Aliquam bibendum eros sed diam ultrices, id cursus nisl ullamcorper. Curabitur sit amet fermentum ex. Fusce pretium sit amet felis in iaculis.",
-            "relativePath": "/images/trees.jpg"
+            "img": "trees.jpg"
         }
     ]
 }

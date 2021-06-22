@@ -5,7 +5,7 @@
             "title": "Clap for Cake",
             "stack": "Javascript, React, Redux, Express, Sequelize",
             "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc.",
-            "img": "",
+            "img": "trees.jpg",
             "website": "https://www.youtube.com/watch?v=k1BneeJTDcU",
             "github": "https://github.com/clap-grace-shopper/grace-shopper-1"
         },
@@ -14,7 +14,7 @@
             "title": "MyMelier",
             "stack": "Javascript, React Native, Redux, Express, Sequelize",
             "info": "There is a principal which is proof against all information, which is proof against all arguments, which cannot fail to keep man in everlasting ignorance; that principal is - contempt prior to investigation! -Herbert Spencer",
-            "img": "",
+            "img": "icon.png",
             "github": "https://github.com/clap-grace-shopper/grace-shopper-1"
         },
         {
@@ -22,7 +22,7 @@
             "title": "Spotify.MLH",
             "stack": "Javascript, VSCode",
             "info": "A lightweight VSCode extension which allows a developer to control Spotify without leaving their IDE.",
-            "img": "",
+            "img": "trees.jpg",
             "website": "https://www.youtube.com/watch?v=k1BneeJTDcU",
             "github": "https://github.com/clap-grace-shopper/grace-shopper-1"
         },
@@ -31,7 +31,7 @@
             "title": "ARGo",
             "stack": "Unity, C#, Photoshop",
             "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam.",
-            "img": "",
+            "img": "trees.jpg",
             "website": "https://www.youtube.com/watch?v=k1BneeJTDcU",
             "github": "https://github.com/clap-grace-shopper/grace-shopper-1"
         },
@@ -40,7 +40,7 @@
             "title": "ARGo",
             "stack": "Unity, C#, Photoshop",
             "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam.",
-            "img": "",
+            "img": "trees.jpg",
             "website": "https://www.youtube.com/watch?v=k1BneeJTDcU",
             "github": "https://github.com/clap-grace-shopper/grace-shopper-1"
         },
@@ -49,7 +49,7 @@
             "title": "ARGo",
             "stack": "Unity, C#, Photoshop",
             "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et eros metus. In facilisis luctus mi, at faucibus nunc. Vivamus lacus lorem, dapibus a dui sed, gravida dignissim quam.",
-            "img": "",
+            "img": "trees.jpg",
             "website": "https://www.youtube.com/watch?v=k1BneeJTDcU",
             "github": "https://github.com/clap-grace-shopper/grace-shopper-1"
         }

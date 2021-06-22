@@ -101,9 +101,6 @@ const ContactPage = () => {
             </button>
           </form>
         </div>
-        <div className="contact-box">
-          <p>(You look nice today.)</p>
-        </div>
       </div>
     </Layout>
   );

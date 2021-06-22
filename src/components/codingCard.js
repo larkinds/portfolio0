@@ -1,12 +1,13 @@
 import React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
-export default function CodingCard({ project }) {
+const CodingCard = ({ project, image }) => {
   return (
     <div className="card-container">
       <div className="card">
         <p className="projectTitle">{project.title}</p>
         <div className="projectImg">
-          <img src="../images/icon.png" alt={project.title} />
+          <GatsbyImage image={image} alt={project.title} />
         </div>
         <p className="projectStack">{project.stack}</p>
         <p className="projectInfo">{project.info}</p>
@@ -27,4 +28,6 @@ export default function CodingCard({ project }) {
       </div>
     </div>
   );
-}
+};
+
+export default CodingCard;

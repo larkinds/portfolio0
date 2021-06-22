@@ -1,16 +1,15 @@
 import * as React from 'react';
 import Layout from '../components/layout';
-import Img from 'gatsby-image';
-import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   return (
     <Layout>
       <div className="homeContainer">
         <div className="homeImg">
-          <Img
+          <StaticImage
             className="title-image"
-            fluid={data.file.childImageSharp.fluid}
+            src="../images/bronzeCardBackground.png"
             alt="copper abstract art piece"
           />
         </div>
@@ -27,17 +26,5 @@ const IndexPage = ({ data }) => {
     </Layout>
   );
 };
-
-export const data = graphql`
-  query Index {
-    file(relativePath: { eq: "bronzeCardBackground.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
 
 export default IndexPage;

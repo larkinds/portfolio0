@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const AboutPage = ({ data }) => {
+const AboutPage = () => {
   return (
     <Layout>
       <div className="about">
-        <Img
+        <StaticImage
           className="about-img"
-          fluid={data.file.childImageSharp.fluid}
-          alt="Larkin"
+          src="../images/bronzeCardBackground.png"
+          alt="Photo of Larkin"
         />
         <p className="aboutp">
           A woman without a man is like a fish without a bicycle. -Gloria
@@ -35,17 +35,5 @@ const AboutPage = ({ data }) => {
     </Layout>
   );
 };
-
-export const data = graphql`
-  query About {
-    file(relativePath: { eq: "bronzeCardBackground.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
 
 export default AboutPage;

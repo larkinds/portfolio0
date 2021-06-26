@@ -1,8 +1,8 @@
 <p align="center">
-    <img alt="Larkin Smith's Logo" src="src/images/bronzeCardBackground.png" width="60" />
+    <img alt="Larkin Smith's Logo" src="src/images/bronzeCardBackground.png" width="80" />
   </a>
 </p>
-<h1 align="center">
+<h2 align="center">
   Larkin D Smith
-</h1>
-<h2>A Portfolio Website</h2>
+</h2>
+<h3>A Portfolio Website</h3>

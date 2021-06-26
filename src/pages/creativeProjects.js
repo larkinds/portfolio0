@@ -13,6 +13,7 @@ const CreativeProjectsPage = ({ data }) => {
   return (
     <Layout>
       <div className="creative-page">
+        <p>A small selection of the ways that I play, creatively.</p>
         {creativeData.data.map((project) => {
           let image = images.filter((node) => node.node.base === project.img);
           let gatsbyImg = getImage(image[0].node.childrenImageSharp[0]);

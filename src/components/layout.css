@@ -148,14 +148,18 @@ p {
   line-height: 1.4;
 }
 
-.about-img {
+.about-img-div {
   float: left;
   margin-right: 5%;
   margin-bottom: 3%;
-  aspect-ratio: 2/3;
-  width: 35%;
+  width: 40%;
   align-self: center;
   justify-self: center;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
 }
 
 .aboutp {
@@ -172,7 +176,7 @@ p {
     align-self: unset;
   }
 
-  .about-img {
+  .about-img-div {
     width: 65%;
   }
 }
@@ -234,7 +238,8 @@ p {
   height: auto;
   justify-self: center;
   align-self: center;
-  border: 1px solid lightblue;
+  padding: 2%;
+  border: 2px dotted #00022e;
 }
 
 .projectImg img {
@@ -280,7 +285,7 @@ p {
 
 .creative-section {
   border: 1px solid #986c35;
-  width: 85%;
+  width: 75%;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -297,6 +302,7 @@ p {
   grid-area: image;
   align-self: center;
   justify-self: center;
+  padding-right: 5%;
 }
 
 .creative-img img {
@@ -306,6 +312,25 @@ p {
 
 .creative-section-info {
   grid-area: info;
+}
+
+@media screen and (max-width: 539px) {
+  .creative-section {
+    border: 1px solid #986c35;
+    width: 85%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 2% 0%;
+    padding: 2%;
+  }
+
+  .creative-section-img {
+    padding-top: 2%;
+    padding-right: 0%;
+    width: 85%;
+  }  
+
 }
 
 /* Contact Page */

@@ -6,19 +6,17 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="about">
+        <div className="about-img-div">
         <StaticImage
           className="about-img"
-          src="../images/bronzeCardBackground.png"
+          src="../images/larkinA.jpg"
+          aspectRatio={3/4}
           alt="Photo of Larkin"
         />
+        </div>
+  
         <p className="aboutp">
-          A woman without a man is like a fish without a bicycle. -Gloria
-          Steinem I only know that people call me a feminist whenever I express
-          sentiments that differentiate me from a doormat. -Rebecca West
-          Feminism is the radical notion that women are human beings. -Cheris
-          Kramarae There is no female mind. The brain is not an organ of sex. As
-          well speak of a female liver. -Charlotte Perkins Gilman Men are from
-          Earth, women are from Earth. Deal with it. -George Carlin
+          Larkin is a queer cis woman who has lived in Brooklyn since 2016.
           <br></br>
           <br></br>
           No woman can call herself free who does not control her own body.

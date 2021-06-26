@@ -12,7 +12,6 @@ const ContactPage = () => {
   }
 
   if (state.submitted) {
-    console.log('in the if');
     return (
       <Layout>
         <div className="contactContent">
@@ -33,14 +32,7 @@ const ContactPage = () => {
       </Layout>
     );
   } else {
-    console.log('in the else');
-    function handleClick() {
-      window.onbeforeunload = () => {
-        for (const form of document.getElementsByTagName('form')) {
-          form.reset();
-        }
-      };
-    }
+
   }
 
   return (

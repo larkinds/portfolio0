@@ -1,12 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Larkin Smith',
-    siteURL: 'vigilant-mcclintock-3da656.netlify.app'
-
+    siteUrl: 'https://www.larkindsmith.com'
   },
   plugins: [
     'gatsby-plugin-sharp',
-    'gatsby-plugin-sitemap',
     'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
@@ -28,5 +26,6 @@ module.exports = {
       __key: 'pages',
     },
     `gatsby-transformer-json`,
+    "gatsby-plugin-sitemap",
   ],
 };

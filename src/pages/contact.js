@@ -1,40 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../components/layout';
 import { useForm, ValidationError } from '@formspree/react';
 
 const ContactPage = () => {
   const [state, handleSubmit] = useForm('mzbyejyp');
-  // const [form, handleForm] = useState(true);
-  const [update, handleUpdate] = useState(false);
 
-  function handleClick(event) {
-    event.preventDefault();
-  }
-
-  if (state.submitted) {
+  if (state.succeeded) {
     return (
       <Layout>
         <div className="contactContent">
+        <div className="contact-social-box">
+          <h2>Social</h2>
           <div className="social-links">
-            <h2>Connect</h2>
-            <a className="contact-link" href="https://github.com/larkinds">
+            <a className="social-link" href="https://github.com/larkinds">
               Github
             </a>
-            <a className="contact-link" href="https://github.com/larkinds">
+            <a className="social-link" href="https://github.com/larkinds">
               Linkedin
             </a>
           </div>
-          <div className="emailContent">
-            <h2>Send Me a Message</h2>
+        </div>
+        <div className="contactLine"></div>
+          <div className="contact-email-box">
             <p>Thank you! I'll be in touch.</p>
           </div>
         </div>
       </Layout>
     );
-  } else {
-
   }
-
   return (
     <Layout>
       <div className="contactContent">
@@ -49,7 +42,7 @@ const ContactPage = () => {
             </a>
           </div>
         </div>
-        <div class="contactLine"></div>
+        <div className="contactLine"></div>
         <div className="contact-email-box">
           <h2>Email</h2>
           <form className="contact-email-form" onSubmit={handleSubmit}>
@@ -75,7 +68,7 @@ const ContactPage = () => {
                 className="email-form-textarea"
                 id="message"
                 name="message"
-                rows="10"
+                rows="8"
               />
               <ValidationError
                 prefix="Message"
@@ -86,7 +79,6 @@ const ContactPage = () => {
             <button
               className="email-form-button"
               type="submit"
-              onClick={handleClick}
               disabled={state.submitting}
             >
               Submit

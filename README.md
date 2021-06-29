@@ -6,3 +6,4 @@
   Larkin D Smith
 </h2>
 <h3>A Portfolio Website</h3>
+<p>Made with Love, by Larkin herself</p>

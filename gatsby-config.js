@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Larkin Smith',
+    siteURL: 'vigilant-mcclintock-3da656.netlify.app'
+
   },
   plugins: [
     'gatsby-plugin-sharp',

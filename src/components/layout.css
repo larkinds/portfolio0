@@ -170,6 +170,7 @@ p {
 
 .about-link {
    color: #fcfaf6;
+   text-decoration: underline;
    text-underline-position: auto;
 }
 

@@ -16,7 +16,7 @@ const AboutPage = () => {
         </div>
   
         <p className="aboutp">
-        Larkin is less online than having a personal website would lead you to believe. She gave up her last social network in the fall of 2020, and now experiences a lot less existential dread. Like, ok, the accounts still exist but none are on her phone and she goes months at a time without checking them. Yes, at their best social networks can build community and spread information in ways that can spark positive systemic change. The dark patterns and designed addictiveness are seriously strong though, so Larkin remains engaged through other means.
+        Larkin is less online than having a personal website would lead you to believe. She gave up her last social network in the fall of 2020, and now experiences a lot less existential dread. Yes, at their best social networks can build community and spread information in ways that can spark positive systemic change. The dark patterns and designed addictiveness are seriously strong though, so Larkin remains engaged through other means.
         <br></br>
         <br></br>
         Larkin believes in and prioritizes kindness. She surrounds herself with people who give a damn. She's a voracious reader and eternal student whose favorite question is a tie between ‘why’ and ‘how'. She has been called a ‘human yelp’ and is known for having spot-on recommendations for pretty much anything one might need. All Black Lives Matter. Unsurprisingly for a Brooklynite who was raised in the Bay Area, Larkin lives in an intentional community and makes her own kombucha. 

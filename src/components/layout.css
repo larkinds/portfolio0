@@ -163,9 +163,14 @@ p {
 }
 
 .aboutp {
-  margin-top: -1%;
-  margin-bottom: 25px;
+  margin-top: -.5%;
+  padding-bottom: 3%;
   font-size: 17px;
+}
+
+.about-link {
+   color: #fcfaf6;
+   text-underline-position: auto;
 }
 
 @media screen and (max-width: 709px) {

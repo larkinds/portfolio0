@@ -1,14 +1,16 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import Layout from '../components/layout';
 
 // markup
 const NotFoundPage = () => {
   return (
+    <Layout>
     <div>
-      <h1>Temp Header</h1>
+      <h1>Uh oh!</h1>
       <Link to="/index/">Back to Safety</Link>
-      <p>Temp Error</p>
     </div>
+    </Layout>
   );
 };
 

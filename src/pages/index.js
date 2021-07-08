@@ -16,7 +16,7 @@ const IndexPage = () => {
         <div className="homeLine"></div>
         <div className="homeText">
           <div>
-            <h2 className="title-name">Larkin Smith</h2>
+            <h2 className="title-name">Larkin D. Smith</h2>
           </div>
           <div>
             <h3 className="title-title">Software Engineer</h3>

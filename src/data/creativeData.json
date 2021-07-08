@@ -4,20 +4,20 @@
             "id": 1,
             "title": "Coder Nails",
             "responsibility": "During my time in coding bootcamp, I sported a series of coding themed nail art as social commentary on the ways the world expects software engineers to look and behave. You better believe this projects gonna be resurrected when I get that engineering $.",
-            "img": "trees.jpg"
+            "img": "helloWorldNails.jpg"
         },
         {
-            "id": 1,
+            "id": 2,
             "title": "Dotty Dating",
-            "responsibility": "This project started as an way to protect my friend's privacy online. Inspired by John Baldessari, I put a colorful dot on each photo in my dating profile(s), pulling a background color into focus. It was a fun branding exercise, which had to be retired as every single message I got for a while was a variation on 'What's with the dots?'.",
-            "img": "trees.jpg"
+            "responsibility": "This project started as an way to protect my friends' online privacy. Inspired by John Baldessari, I put a colorful dot on each photo in my dating profile(s), pulling a background color into focus.",
+            "img": "dots.PNG"
         },
         {
-            "id": 1,
+            "id": 3,
             "title": "It's Always Sunny in Philadelphia",
-            "job": "Production Assistant, Wardrobe Department",
-            "responsibility": "The job that launched my time in the film industry. It brought me onto a tv set for the first time and showed me the joy of a group of creatives pitching in to create art together.",
-            "img": "trees.jpg"
+            "job": "Costume Intern",
+            "responsibility": "The job that launched my time in the film industry,  brought me onto a tv set for the first time, and showed me the joy of a group of creatives pitching in to create art together.",
+            "img": "sunny.jpg"
         }
     ]
 }

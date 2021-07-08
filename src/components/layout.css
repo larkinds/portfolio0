@@ -283,8 +283,8 @@ p {
 .creative-page {
   grid-area: main;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
   margin: 1% 0%;
 }
 

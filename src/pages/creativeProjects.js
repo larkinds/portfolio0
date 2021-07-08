@@ -6,9 +6,7 @@ import CreativeSection from '../components/creativeSection';
 import creativeData from '../data/creativeData.json';
 
 const CreativeProjectsPage = ({ data }) => {
-  console.log(data);
   let images = data.allFile.edges;
-  console.log(images);
 
   return (
     <Layout>

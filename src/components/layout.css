@@ -134,6 +134,8 @@ p {
 
   .homeText {
     font-size: 16px;
+    justify-self: center;
+    width: 80%;
   }
 }
 
@@ -479,6 +481,11 @@ form,
 }
 
 @media screen and (min-width: 1000px) {
+  .contactContent {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  
   .contact-email-box {
     width: 55%;
     height: 48%;

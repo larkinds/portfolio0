@@ -21,7 +21,7 @@
             "title": "Portfolio Website",
             "stack": "Javascript, React, Gatsby, GraphQl, CSS",
             "info": "Inception.",
-            "img": "inception.png",
+            "img": "Inception.png",
             "github": "https://github.com/larkinds/portfolio0"
         },
         {
@@ -29,7 +29,7 @@
             "title": "MyMelier",
             "stack": "Javascript, React Native, Redux, Express, Sequelize",
             "info": "'A sommelier in your pocket.' A mobile app built as a group project during my time at the Grace Hopper Program at Fullstack Academy.",
-            "img": "myMelierF.png",
+            "img": "MyMelierF.png",
             "github": "https://github.com/my-melier/my-melier"
         }
     ]

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import {Helmet} from 'react-helmet'
 import './layout.css';
 
 const Layout = ({ children }) => {
   return (
     <div className="bodyDiv">
+      <Helmet><title>Larkin D Smith</title></Helmet>
       <nav className="navbar" id="navbar">
         <Link className="logo" to="/">
           Larkin D. Smith

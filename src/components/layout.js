@@ -5,7 +5,7 @@ import './layout.css';
 
 const Layout = ({ children }) => {
   return (
-    <div className="bodyDiv">
+    <div className="body-div">
       <Helmet><title>Larkin D Smith</title></Helmet>
       <nav className="navbar" id="navbar">
         <Link className="logo" to="/">
@@ -14,12 +14,6 @@ const Layout = ({ children }) => {
         <div className="nav-item">
           <Link className="nav-item-text" to="/about">
             About
-          </Link>
-          <Link className="nav-item-text" to="/codingProjects">
-            Code
-          </Link>
-          <Link className="nav-item-text" to="/creativeProjects">
-            Creative
           </Link>
           <Link className="nav-item-text" to="/contact">
             Contact

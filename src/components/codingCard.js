@@ -5,25 +5,21 @@ const CodingCard = ({ project, image }) => {
   return (
     <div className="card-container">
       <div className="card">
-        <p className="projectTitle">{project.title}</p>
-        <div className="projectImg">
+        <a className="project-title" href={project.github}>{project.title}</a>
+        <div className="project-img">
           <GatsbyImage image={image} alt={project.title} />
         </div>
-        <p className="projectStack">{project.stack}</p>
-        <p className="projectInfo">{project.info}</p>
+        <p className="project-stack">{project.stack}</p>
+        <p className="project-info">{project.info}</p>
 
-        <div className="projectLinks">
+        <div className="project-links">
           {project.website ? (
-            <a className="singleLink" href={project.website}>
+            <a className="single-link" href={project.website}>
               Website
             </a>
           ) : (
             <></>
           )}
-
-          <a className="singleLink" href={project.github}>
-            Github
-          </a>
         </div>
       </div>
     </div>

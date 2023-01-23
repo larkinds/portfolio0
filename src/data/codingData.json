@@ -2,14 +2,22 @@
     "data": [
         {
             "id": 1,
-            "title": "Spotify.MLH",
-            "stack": "Javascript, VSCode",
-            "info": "A lightweight VSCode extension which allows a developer to control Spotify without leaving their IDE built during my fellowship with Major League Hacking.",
+            "title": "Where The Fuck Am I?",
+            "stack": "Typescript, Angular",
+            "info": "A mobile app that tells a customer what neighborhood they're currently in or what neighborhood an address is in, without invading their privacy. Currently a work in progress.",
             "img": "vscodeSpotify.png",
             "github": "https://github.com/larkinds/Spotify.MLH"
         },
         {
             "id": 2,
+            "title": "Where The Fuck Am I?",
+            "stack": "Typescript, React Native, Mapbox API",
+            "info": "A mobile app that tells a customer what neighborhood they're currently in or what neighborhood an address is in, without invading their privacy. Currently a work in progress.",
+            "img": "vscodeSpotify.png",
+            "github": "https://github.com/larkinds/Spotify.MLH"
+        },
+        {
+            "id": 4,
             "title": "ResponsibleConsumer",
             "stack": "Java, Springboot, Bootstrap",
             "info": "A prototype of a website that would help consumers make informed purchasing decisions by providing ethical scores for companies in a variety of areas including environmental impact, human rights abuses, and more.",
@@ -17,19 +25,19 @@
             "github": "https://github.com/larkinds/Responsible-Consumer"
         },
         {
-            "id": 3,
+            "id": 5,
             "title": "Portfolio Website",
             "stack": "Javascript, React, Gatsby, GraphQl, CSS",
             "info": "Inception.",
-            "img": "Inception.png",
+            "img": "inception.png",
             "github": "https://github.com/larkinds/portfolio0"
         },
         {
-            "id": 4,
+            "id": 6,
             "title": "MyMelier",
             "stack": "Javascript, React Native, Redux, Express, Sequelize",
             "info": "'A sommelier in your pocket.' A mobile app built as a group project during my time at the Grace Hopper Program at Fullstack Academy.",
-            "img": "MyMelierF.png",
+            "img": "myMelierF.png",
             "github": "https://github.com/my-melier/my-melier"
         }
     ]

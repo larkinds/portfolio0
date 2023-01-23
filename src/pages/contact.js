@@ -8,19 +8,19 @@ const ContactPage = () => {
   if (state.succeeded) {
     return (
       <Layout>
-        <div className="contactContent">
-        <div className="contact-social-box">
-          <h2>Social</h2>
-          <div className="social-links">
-            <a className="social-link" href="https://github.com/larkinds">
-              Github
-            </a>
-            <a className="social-link" href="https://github.com/larkinds">
-              Linkedin
-            </a>
+        <div className="contact-content">
+          <div className="contact-social-box">
+            <h2>Social</h2>
+            <div className="social-links">
+              <a className="social-link" href="https://github.com/larkinds">
+                Github
+              </a>
+              <a className="social-link" href="https://github.com/larkinds">
+                Linkedin
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="contactLine"></div>
+          <div className="contactLine"></div>
           <div className="contact-email-box">
             <p>Thank you! I'll be in touch.</p>
           </div>
@@ -30,15 +30,15 @@ const ContactPage = () => {
   }
   return (
     <Layout>
-      <div className="contactContent">
+      <div className="contact-content">
         <div className="contact-social-box">
           <h2>Social</h2>
           <div className="social-links">
             <a className="social-link" href="https://github.com/larkinds">
-              Github
-            </a>
-            <a className="social-link" href="https://github.com/larkinds">
               Linkedin
+            </a>
+            <a className="social-link" href="https://www.instagram.com/larkinloveslemons/">
+              Instagram
             </a>
           </div>
         </div>

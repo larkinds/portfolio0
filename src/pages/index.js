@@ -5,16 +5,16 @@ import { StaticImage } from 'gatsby-plugin-image';
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="homeContainer">
-        <div className="homeImg">
+      <div className="home-container">
+        <div className="home-img">
           <StaticImage
             className="title-image"
             src="../images/bronzeCardBackground.png"
             alt="copper abstract art piece"
           />
         </div>
-        <div className="homeLine"></div>
-        <div className="homeText">
+        <div className="home-line"></div>
+        <div className="home-text">
           <div>
             <h2 className="title-name">Larkin D. Smith</h2>
           </div>

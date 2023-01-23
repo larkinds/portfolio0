@@ -9,9 +9,14 @@ const CodingProjectsPage = ({ data }) => {
   let images = data.allFile.edges;
   return (
     <Layout>
-      <div className="codingPage">
+      <div className="coding-page">
         {codingData.data.map((project) => {
-          let image = images.filter((node) => node.node.base === project.img);
+          console.log(project)
+          let image = images.filter((node) => {
+            console.log({node})
+            return node.node.base === project.img
+          });
+          console.log({image})
           let gatsbyImg = getImage(image[0].node.childrenImageSharp[0]);
           return (
             <CodingCard key={project.id} project={project} image={gatsbyImg} />
